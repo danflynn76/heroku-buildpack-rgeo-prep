@@ -23,7 +23,7 @@ Add these files to git.
 
 Now, set up your heroku configuration.
 
-    heroku config:set BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-multi.git LD_LIBRARY_PATH=/app/lib
+    heroku config:set BUILDPACK_URL=https://github.com/trailheadlabs/heroku-buildpack-multi.git LD_LIBRARY_PATH=/app/lib
 
 If you haven't already set up your heroku database for postgis, you need to run the following steps. You currently must have a production level database to enable postgis.
 
