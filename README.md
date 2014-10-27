@@ -9,14 +9,15 @@ This solution closely follows this [blog article](https://devcenter.spacialdb.co
 
 Create this .buildpacks file in the root of your project.
 
-    https://github.com/peterkeen/heroku-buildpack-vendorbinaries.git
-    https://github.com/aaronrenner/heroku-buildpack-rgeo-prep.git
+    https://github.com/trailheadlabs/heroku-buildpack-vendorbinaries.git
+    https://github.com/trailheadlabs/heroku-buildpack-rgeo-prep.git
     https://github.com/heroku/heroku-buildpack-ruby.git
 
 Create this .vendor_urls file in the root of your project.
 
-    https://s3.amazonaws.com/spacialdb/heroku/geos-3.3.8.tar.gz
-    https://s3.amazonaws.com/spacialdb/heroku/proj-4.8.0.tar.gz
+http://trailheadlabs.outerspatial.s3.amazonaws.com/buildpack.binaries/gdal-1.10.1-1.tar.gz
+http://trailheadlabs.outerspatial.s3.amazonaws.com/buildpack.binaries/proj-4.8.0-1.tar.gz
+http://trailheadlabs.outerspatial.s3.amazonaws.com/buildpack.binaries/geos-3.4.1.tar.gz
 
 Add these files to git.
 
@@ -58,7 +59,12 @@ If both of these are true, you should be ready to go.
 
 ## Credits
 
+This is really just a fork for use in Trailhead Labs applications of :
+
+* https://github.com/aaronrenner/heroku-buildpack-rgeo-prep
+
 This solution draws from many people's research including
+
 
 * https://github.com/jcamenisch/heroku-buildpack-rgeo
 * https://github.com/davekapp for help with troubleshooting the extconf.rb build process
