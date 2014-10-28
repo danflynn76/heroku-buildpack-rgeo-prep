@@ -4,9 +4,6 @@ This buildpack overwrites Heroku's default .bundle/config to set BUNDLE_BUILD__R
 
 ## Setup
 
-This solution closely follows this [blog article](https://devcenter.spacialdb.com/Heroku.html) by SpacialDB.
-
-
 Create this .buildpacks file in the root of your project.
 
     https://github.com/trailheadlabs/heroku-buildpack-vendorbinaries.git
@@ -68,7 +65,6 @@ This is really just a fork for use in Trailhead Labs applications of :
 * https://github.com/aaronrenner/heroku-buildpack-rgeo-prep
 
 This solution draws from many people's research including
-
 
 * https://github.com/jcamenisch/heroku-buildpack-rgeo
 * https://github.com/davekapp for help with troubleshooting the extconf.rb build process
