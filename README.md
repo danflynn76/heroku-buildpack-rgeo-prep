@@ -58,6 +58,18 @@ Verify it worked
 
 If both of these are true, you should be ready to go.
 
+## Tools
+
+We found the heroku repo plugin to be useful during the debugging process :
+
+https://github.com/heroku/heroku-repo
+
+Running the following commands let us clear out the buildpacks so that we could ensure any changes we made would be used in the next deploy:
+
+    heroku repo:purge_cache
+    
+    heroku repo:reset
+    
 ## Credits
 
 This is really just a fork for use in Trailhead Labs applications of :
