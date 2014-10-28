@@ -25,6 +25,10 @@ Now, set up your heroku configuration.
 
     heroku config:set BUILDPACK_URL=https://github.com/trailheadlabs/heroku-buildpack-multi.git LD_LIBRARY_PATH=/app/lib
 
+    heroku config:set GDAL_BIN=/app/bin
+    
+    heroku config:set GDAL_DATA=/app/share/gdal
+    
 If you haven't already set up your heroku database for postgis, you need to run the following steps. You currently must have a production level database to enable postgis.
 
 Since postgis uses different settings in the database.yml, you need to modify the DATABASE_URL variable. Run the following command and extract the nessecary components out of it:
