@@ -7,13 +7,11 @@ if [ -f $2/.bundle/config ]; then
   rm $2/.bundle/config
 fi
 
-ls -la $1
-
 echo "       Writing new .bundle/config"
 
 mkdir -p $1/.bundle
 echo "---
-BUNDLE_BUILD__RGEO: \"--with-geos-dir=$1/.heroku/vendor --with-geos-lib=$1/.heroku/vendor/lib --with-proj-dir=$1 --with-proj-lib=$1/lib\"
+BUNDLE_BUILD__RGEO: \"--with-geos-dir=$1/.heroku/vendor\"
 BUNDLE_PATH: vendor/bundle
 BUNDLE_BIN: vendor/bundle/bin
 BUNDLE_WITHOUT: development:test
