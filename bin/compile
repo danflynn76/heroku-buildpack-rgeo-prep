@@ -11,7 +11,7 @@ echo "       Writing new .bundle/config"
 
 mkdir -p $1/.bundle
 echo "---
-BUNDLE_BUILD__RGEO: --with-geos-dir=/app/.heroku/vendor
+BUNDLE_BUILD__RGEO: \"--with-geos-dir=/app/.heroku/vendor\"
 BUNDLE_PATH: vendor/bundle
 BUNDLE_BIN: vendor/bundle/bin
 BUNDLE_WITHOUT: development:test
